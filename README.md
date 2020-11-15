@@ -11,4 +11,16 @@ Alumno Gustavo Sánchez
 
 ## Uso
 
----
+```bash
+python3 client/client-gisr.py -u USERNAME -sip SERVER_IP -sport SERVER_PORT -lport LISTENNING_PORT
+```
+
+> NOTA: El usuario es un parámetro obligatorio
+
+Para observar la lista de parámetros y sus valores por defecto
+
+```bash
+python3 client/client-gisr.py -h
+```
+
+![Parameters help](https://github.com/gustavosr98/UCAB09-SD-P3_Sockets/Help.png)
