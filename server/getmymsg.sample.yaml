@@ -1,0 +1,24 @@
+
+# Número máximo de conexiónes simultaneas
+max_conn: 5
+
+# IP y puerto para e bind del servidor
+bind_addr: 127.0.0.1
+bind_port: 19876
+
+# Información para el logger.
+log:
+  filename: getmymsg.log  # Path del archivo de logs
+  level: INFO
+  format: '%(asctime)s %(levelname)s: %(message)s'
+
+# Información de los usuario
+users:
+  usuario_1:
+    ip: 127.0.0.1
+    msg: Mensase 1
+  
+  usuario_2:
+    ip: 127.0.0.1
+    msg: >-
+      Lorem ipsum dolor sit amet, cónsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat noñ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
