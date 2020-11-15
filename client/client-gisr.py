@@ -78,12 +78,7 @@ class Client:
         self.sockTCP.send(command.encode())
         self.setLastResponseTCP()
         if (self.lastReponseTCP["code"] != 'ok'):
-            message = self.lastReponseTCP["message"]
-            # complement = ''
-            
-            # if message == :  
-            
-            raise Exception(f'ERROR: {message}')
+            raise Exception(f'ERROR: {self.lastReponseTCP["message"]}')
         
     # COMMANDS
     def sayHi(self):
