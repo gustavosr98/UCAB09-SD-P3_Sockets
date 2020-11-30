@@ -49,6 +49,7 @@ class Client:
                 response, address = self.sockUDP.recvfrom(1024)
                 self.responseUDP = (b64decode(response)).decode('utf-8')
             except:
+                self.giveMeMessage()
                 print(f'Attemp number: {attempCount+1} ...')
                 attempCount += 1
 
